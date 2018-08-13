@@ -1,11 +1,13 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
+from Tix import TEXT
 
 import itchat
 from tuling import get_response
 from itchat.content import *
 
 itchat.auto_login(hotReload=True)
+
 
 @itchat.msg_register(TEXT)
 def text_reply(msg):
@@ -17,13 +19,15 @@ def text_reply(msg):
     else:
         return get_response(msg['Text'])
 
-@itchat.msg_register(TEXT, isGroupChat = True)
+
+@itchat.msg_register(TEXT, isGroupChat=True)
 def text_reply(msg):
     print(msg)
     white_list = {
-        '张喜庄92号院':'@@427f7ba31d25e1dc70f88978bfbc861a6142573141a0fbcddb1a4b11af16e4c5',
-        }
+        '张喜庄92号院': '@@427f7ba31d25e1dc70f88978bfbc861a6142573141a0fbcddb1a4b11af16e4c5',
+    }
     if msg['FromUserName'] in white_list.values():
         return get_response(msg['Text'])
+
 
 itchat.run(debug=True)
