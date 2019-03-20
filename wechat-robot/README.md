@@ -9,10 +9,10 @@ Python 2.7.14
 
 1. 验证python环境
 
-  $python -V
+    $python -V
   
 2. 切换到当前项目路径下
 
-  $python weixin_robot.py
+    $python weixin_robot.py
 
 
