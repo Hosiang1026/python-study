@@ -2,7 +2,7 @@
 
 ## 作者：吉祥草
 
-## 网站：http://www.hosiang.cn （狂欢马克思）
+## 网站：http://www.hosiang.ml （狂欢马克思）
 
 ## 项目介绍
 
