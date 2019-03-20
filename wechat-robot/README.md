@@ -10,8 +10,13 @@ Python 2.7.14
 1. 验证python环境
 
    $python -V
+   $pip -V
     
-2. 切换到当前项目路径下
+2. 安装itchat模块
+
+   $pip install itchat
+    
+3. 切换到当前项目路径下
 
     $python weixin_robot.py
 
